@@ -18,7 +18,7 @@ function Card({ card, playable, onPlay }) {
       style={{ backgroundImage: `url(${card.img})` }}
     >
       {/* Dark gradient keeps the text readable over any artwork. */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/95" />
+      <div className="absolute inset-0 bg-linear-to-b from-black/50 via-transparent to-black/95" />
 
       <div
         className={`absolute top-2 left-2 flex h-9 w-9 items-center justify-center rounded-full border-2 border-zinc-950 ${style.badge} text-lg font-black text-white shadow-md`}

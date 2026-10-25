@@ -11,7 +11,7 @@ function EnemyPanel({ health, shield, intent, defeated }) {
 
   return (
     <section className="flex flex-wrap items-center gap-4 rounded-2xl border border-zinc-800 bg-zinc-900/80 p-4 sm:flex-nowrap">
-      <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border border-zinc-700 bg-gradient-to-br from-zinc-700 to-zinc-950 text-3xl">
+      <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border border-zinc-700 bg-linear-to-br from-zinc-700 to-zinc-950 text-3xl">
         {defeated ? '✖' : '◈'}
       </div>
 
@@ -21,7 +21,7 @@ function EnemyPanel({ health, shield, intent, defeated }) {
           {shield > 0 && <span className="text-sm font-semibold text-sky-300">⛨ {shield}</span>}
         </div>
         <div className="relative mt-2 h-5 overflow-hidden rounded-full border border-zinc-700 bg-zinc-950">
-          <div className="h-full bg-gradient-to-r from-red-700 to-red-500 transition-all duration-300" style={{ width: `${percent}%` }} />
+          <div className="h-full bg-linear-to-r from-red-700 to-red-500 transition-all duration-300" style={{ width: `${percent}%` }} />
           <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-white">
             {health} / {ENEMY_MAX_HEALTH}
           </span>

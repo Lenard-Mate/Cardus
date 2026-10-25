@@ -9,7 +9,7 @@ function App() {
   const canAct = state.status === 'playing'
 
   return (
-    <main className="min-h-svh bg-zinc-950 bg-[radial-gradient(ellipse_at_top,_#27272a_0%,_#09090b_70%)] text-zinc-200">
+    <main className="min-h-svh bg-zinc-950 bg-[radial-gradient(ellipse_at_top,#27272a_0%,#09090b_70%)] text-zinc-200">
       <div className="mx-auto flex min-h-svh max-w-5xl flex-col gap-4 p-4">
         <header className="flex items-baseline justify-between">
           <h1 className="text-xl font-black tracking-[0.25em] text-zinc-100 uppercase">Aether Forge</h1>
@@ -24,7 +24,7 @@ function App() {
         />
 
         {/* Center arena: combat log, or the end-of-run screen. */}
-        <section className="flex flex-1 flex-col items-center justify-center rounded-2xl border border-zinc-800/60 bg-[repeating-linear-gradient(100deg,_transparent_0_14px,_rgba(148,163,184,0.04)_14px_15px)] p-6 text-center">
+        <section className="flex flex-1 flex-col items-center justify-center rounded-2xl border border-zinc-800/60 bg-[repeating-linear-gradient(100deg,transparent_0_14px,rgba(148,163,184,0.04)_14px_15px)] p-6 text-center">
           {canAct ? (
             <ul className="space-y-1">
               {state.log.map((entry, i) => (
