@@ -14,7 +14,7 @@ function Card({ card, playable, onPlay }) {
       onClick={() => onPlay(card.uid)}
       disabled={!playable}
       title={playable ? `Play ${card.name}` : 'Not enough energy'}
-      className={`group relative h-60 w-40 shrink-0 overflow-hidden rounded-xl border-2 ${style.border} bg-zinc-900 bg-cover bg-center text-left shadow-lg shadow-black/60 transition-transform duration-200 hover:-translate-y-4 hover:scale-105 hover:shadow-xl ${style.glow} focus-visible:-translate-y-4 focus-visible:outline-2 focus-visible:outline-zinc-100 disabled:cursor-not-allowed disabled:opacity-50 disabled:grayscale-[60%]`}
+      className={`group relative h-60 w-40 shrink-0 overflow-hidden rounded-xl border-2 ${style.border} bg-zinc-900 bg-cover bg-center text-left shadow-lg shadow-black/60 transition-transform duration-200 hover:-translate-y-4 hover:scale-105 hover:shadow-xl ${style.glow} focus-visible:-translate-y-4 focus-visible:outline-2 focus-visible:outline-zinc-100 disabled:cursor-not-allowed disabled:opacity-50 disabled:grayscale-60`}
       style={{ backgroundImage: `url(${card.img})` }}
     >
       {/* Dark gradient keeps the text readable over any artwork. */}
