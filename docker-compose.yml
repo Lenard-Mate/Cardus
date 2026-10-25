@@ -1,0 +1,7 @@
+services:
+  cardus:
+    build: .
+    image: cardus
+    ports:
+      - "8080:80"
+    restart: unless-stopped
